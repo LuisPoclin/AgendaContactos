@@ -63,6 +63,7 @@ public class Agenda3 {
 			}
 			if (!band) {
 				System.out.println("Contacto no registrado");
+				break;
 			}
 		}
 	}
@@ -74,8 +75,10 @@ public class Agenda3 {
 			if (this.lista != null && c.compareToIgnoreCase(this.lista[i].getNombre()) == 0) {
 				this.lista[i].DatosContacto();
 				band = true;
-			} else {
+			}
+			if (!band) {
 				System.out.println("Contacto no registrado");
+				break;
 			}
 		}
 	}
@@ -87,8 +90,11 @@ public class Agenda3 {
 			if (this.lista != null && c.compareToIgnoreCase(this.lista[i].getTelefono()) == 0) {
 				this.lista[i].DatosContacto();
 				band = true;
-			} else {
+			}
+			if (!band) {
 				System.out.println("Contacto no registrado");
+				break;
+
 			}
 		}
 
@@ -101,8 +107,11 @@ public class Agenda3 {
 			if (this.lista != null && c.compareToIgnoreCase(this.lista[i].getEmail()) == 0) {
 				this.lista[i].DatosContacto();
 				band = true;
-			} else {
+			}
+			if (!band) {
 				System.out.println("Contacto no registrado");
+				break;
+
 			}
 		}
 
@@ -119,8 +128,11 @@ public class Agenda3 {
 				System.out.println("El nuevo contacto es :");
 				this.lista[i].DatosContacto();
 				band = true;
-			} else {
+			}
+			if (!band) {
 				System.out.println("Contacto no registrado");
+				break;
+
 			}
 		}
 
@@ -139,6 +151,7 @@ public class Agenda3 {
 			}
 			if (!band) {
 				System.out.println("Contacto no registrado");
+				break;
 			}
 		}
 
@@ -154,8 +167,11 @@ public class Agenda3 {
 				System.out.println("El nuevo contacto es :");
 				this.lista[i].DatosContacto();
 				band = true;
-			} else {
+			}
+			if (!band) {
 				System.out.println("Contacto no registrado");
+				break;
+
 			}
 		}
 
@@ -171,7 +187,10 @@ public class Agenda3 {
 				this.lista[i].DatosContacto();
 				band = true;
 			}
-
+			if (!band) {
+				System.out.println("Contacto no registrado");
+				break;
+			}
 		}
 	}
 }
